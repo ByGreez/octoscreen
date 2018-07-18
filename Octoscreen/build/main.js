@@ -38,7 +38,7 @@
       this.container.style.width = this.width;
       this.container.style.height = this.height;
       this.container.style.top = top;
-      return this.container.style.left = left;
+//      return this.container.style.left = left;
     };
 
     Saver.prototype.drawBoxes = function() {
@@ -52,10 +52,11 @@
           for (col = _j = 1, _ref1 = this.cols; 1 <= _ref1 ? _j <= _ref1 : _j >= _ref1; col = 1 <= _ref1 ? ++_j : --_j) {
             box = document.createElement('div');
             box.classList.add('octicon-mega');
-            if (row === Math.ceil(this.rows / 2) && (col === this.cols / 2 || col === (this.cols / 2) + 1)) {
-              if (col !== (this.cols / 2) + 1) {
+            if (row === Math.ceil(this.rows / 2)-1 && (col === ((this.cols / 2)-2) || col === (this.cols / 2)-1 )) {
+              if (col !== (this.cols / 2) -1) {
                 box.classList.add('logo');
-                box.classList.add('octicon-logo-github');
+					   box.textContent = "Oct icon";
+                box.classList.add('octicon-logo-val');
               }
             } else {
               box.classList.add('icon');

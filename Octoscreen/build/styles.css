@@ -24,13 +24,20 @@ body {
   opacity: 0.1; }
 
 .logo {
-  width: 96px;
+  width: 120px;
   height: 48px;
   float: left;
   opacity: 0.6;
   padding-top: 3px;
   box-sizing: border-box; }
-
+.octicon-logo-val{
+	font-size:46px;
+	width:240px;
+	text-transform:uppercase;
+	font-family:"Fira Code";
+	line-height: 0.8;
+	padding:0;
+}
 .fading {
   -webkit-animation: fading 4s 1; }
 
